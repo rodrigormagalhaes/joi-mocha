@@ -1,5 +1,8 @@
 ### Automação de testes de contrato de API com Joi
 
+- Pré requisito
+  > [Node.js](https://github.com/nodesource/distributions/blob/master/README.md#debinstall) 
+
 - Instalar:
 ```
 npm install
@@ -11,7 +14,7 @@ npm test
 ```
 
 - Relatório html: 
-  * ./mochawesome-report/mochawesome.html
+  > ./mochawesome-report/mochawesome.html
  
 
 #### Referências
