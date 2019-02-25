@@ -1,5 +1,3 @@
-import Joi from 'joi';
-
 const schemaUser = Joi.object({
     login: Joi.string().required(),
     id: Joi.number().integer(),

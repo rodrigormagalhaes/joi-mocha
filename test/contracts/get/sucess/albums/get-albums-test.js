@@ -8,7 +8,7 @@ const request = require('supertest');
 const URL = 'https://jsonplaceholder.typicode.com/'
 
 
-describe('GET Albums', () => {
+describe('Get Albums', () => {
     it('Deve retornar um album conforme schemaAlbum', done => {
         request(URL)
             .get('albums/1')
@@ -20,7 +20,7 @@ describe('GET Albums', () => {
             })
     });
 
-    it('Deve retornar uma lista de posts', done => {
+    it('Deve retornar uma lista de albums', done => {
         request(URL)
             .get('albums')
             .expect('Content-Type', /json/)
