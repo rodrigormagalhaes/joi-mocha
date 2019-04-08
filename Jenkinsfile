@@ -15,14 +15,6 @@ pipeline {
                 sh 'npm test'
             }
 		}
-
-        stage ('Cucumber Reports') {
-            steps {
-                cucumber buildStatus: "UNSTABLE",
-                    fileIncludePattern: "**/report.json",
-                    jsonReportDirectory: '.'
-            }
-        }
     }
     
     post { 
