@@ -5,6 +5,8 @@ pipeline {
         stage('Config') {
             steps {
                 sh 'npm install'
+                sh 'npm -v'
+                sh 'nodejs -v'
             }	
 		}
 
