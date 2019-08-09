@@ -1,4 +1,4 @@
-const schemaUser = Joi.object({
+const userSchema = Joi.object({
     login: Joi.string().required(),
     id: Joi.number().integer(),
     node_id: Joi.string().required(),
@@ -33,4 +33,4 @@ const schemaUser = Joi.object({
 
 }).required();
 
-export default schemaUser;
+export default userSchema;

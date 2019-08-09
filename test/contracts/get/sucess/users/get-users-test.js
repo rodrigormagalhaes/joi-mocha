@@ -1,13 +1,13 @@
-import schemaUser from './schema-user';
+import userSchema from '../../../../schemas/user-schema';
 
 describe('Get Users', function () {
-    it('Validar response conforme definido no schemaUser', function (done) {
+    it('Validar response conforme definido no userSchema', function (done) {
         request
             .get("users/rodrigormagalhaes")
             .expect(200)
             .expect('Content-Type', /json/)
             .end(function (err, res) {
-                joiAssert(res.body, schemaUser);
+                joiAssert(res.body, userSchema);
                 done(err);
             })
     });

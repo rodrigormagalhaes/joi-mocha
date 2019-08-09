@@ -11,7 +11,7 @@ export const schemaAlbum = Joi.object(
 
 ).required();
 
-export const schemaAlbumsList = Joi.array().items(Joi.object().keys(
+export const schemaAlbumList = Joi.array().items(Joi.object().keys(
     properties
 
 )).required();

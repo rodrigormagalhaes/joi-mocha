@@ -12,6 +12,7 @@
     "supertest": "^3.4.2"
   },
   "scripts": {
-    "test": "mocha --opts config/mocha.opts test/contracts/**/*.js"
+    "test": "mocha --opts config/mocha.opts test/contracts/**/*.js",
+    "test1": "mocha --opts config/mocha.opts test/contracts/post/sucess/post.js"
   }
 }

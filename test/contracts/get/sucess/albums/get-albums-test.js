@@ -1,7 +1,7 @@
 import joiAssert from 'joi-assert'
 import { expect } from 'chai';
 
-import * as schemas  from './schema-album';
+import * as schemas  from '../../../../schemas/album-schema';
 
 const request = require('supertest');
 
@@ -26,7 +26,7 @@ describe('Get Albums', () => {
             .expect('Content-Type', /json/)
             .end(function (err, res) {
                 expect(res.status). to.be.eql(200);
-                joiAssert(res.body, schemas.schemaAlbumsList);
+                joiAssert(res.body, schemas.schemaAlbumList);
                 done(err);
             })
 

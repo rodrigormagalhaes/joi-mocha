@@ -11,6 +11,7 @@ npm install
 - **Executar testes**:
 ```
 npm test
+npm run test1
 ```
 
 - **Relatório html**: 
