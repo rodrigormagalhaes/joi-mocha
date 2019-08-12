@@ -1,5 +1,7 @@
 import { expect } from 'chai';
 
+import postSchema  from '../../../schemas/post-schema';
+
 const request = require('supertest');
 const URL = 'https://jsonplaceholder.typicode.com/posts'
 
@@ -16,7 +18,7 @@ describe('Post', () => {
                 expect(res.body).to.contains({ id: 101, userId: 1 })
                 console.log(res.body)
 
-                //joiAssert(res.body, schemas.schemaAlbum);
+                joiAssert(res.body, postSchema);
                 done(err);
             });
     });
